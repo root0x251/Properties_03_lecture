@@ -8,18 +8,18 @@
 
 #import "Human.h"
 
-/* -----инкапсуляция------*/
+// -----инкапсуляция------
 @interface Human()
 @property (assign, nonatomic) NSInteger nameCalled; //для инкапсуляции
 @end
-/* -----инкапсуляция------*/
+// -----инкапсуляция------
 
 
 @implementation Human
 @synthesize name = _name;  //для переопредедения set и get
 
 
-/* -----инициализация------*/
+// -----инициализация------
 
 - (instancetype)init
 {
@@ -34,9 +34,9 @@
     return self;
 }
 
-/* -----инициализация------*/
+// -----инициализация------
 
--(void) setName:(NSString *)name{
+- (void) setName:(NSString *)name{
     
     NSLog(@"setter setName: is called ");       //переопределяем имя
     _name = name;                               //обращение к проперти напрямую
@@ -45,32 +45,31 @@
 
 
 //инкапсуляция и подсчет сколько раз вызывался метод name
--(NSString*) name{
+- (NSString *)name {
     self.nameCalled++;
     NSLog(@"name gatter is Called %d times", self.nameCalled);
     return _name;
 }
 
 
--(NSString*) test{
+- (NSString *)test {
     return @"Hack";                             //возвращаем вместо test - HAck
 }
-/*   Можно переопределить так
+//  Можно переопределить так
  
- -(NSString*) test{
- return _test;
- }
+// - (NSString*)test {
+// return _test;
+// }
  
- тут все будет нормально, мы получим то что изначально задавали
- 
- */
+// тут все будет нормально, мы получим то что изначально задавали
 
--(NSInteger) age{
+
+- (NSInteger)age {
     NSLog(@"Age getter is called");
     return _age;
 }
 
--(NSInteger) howOldAreYou{
+- (NSInteger)howOldAreYou {
     return _age;
 }
 

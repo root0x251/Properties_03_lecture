@@ -16,6 +16,6 @@
 @property(assign,nonatomic)float height;
 
 
--(NSInteger) howOldAreYou;
+- (NSInteger)howOldAreYou;
 
 @end
