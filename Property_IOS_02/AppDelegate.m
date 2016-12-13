@@ -20,16 +20,28 @@
     // Override point for customization after application launch.
     
     Human *boxer = [[Human alloc]init];
+    //set
+    [boxer setName:@"Aleksander"];
+    [boxer setAge:22];
+    [boxer setWeight:64.3];
+    [boxer setHeight:153.2];
+    //get
+    NSLog(@"Имя-%@",[boxer name]);
+    NSLog(@"Возраст - %d",[boxer age]);
+    NSLog(@"Вес - %.2f",[boxer weight]);
+    NSLog(@"Рост - %.2f",[boxer height]);
     
     boxer.name = @"Alex";
     boxer.age = 22;
     boxer.weight = 78.4f;
     boxer.height = 185.3f;
     
-    NSLog(@"Имя-%@",[boxer name]);
-    NSLog(@"Возраст - %d",[boxer age]);
-    NSLog(@"Вес - %.2f",[boxer weight]);
-    NSLog(@"Рост - %.2f",[boxer height]);
+    NSLog(@"Имя-%@",boxer.name);
+    NSLog(@"Возраст-%D",boxer.age);
+    NSLog(@"Вес-%.2f",boxer.weight);
+    NSLog(@"Рост-%.2f",boxer.height);
+    
+    NSLog(@"%d", [boxer howOldAreYou]);
     
     return YES;
 }

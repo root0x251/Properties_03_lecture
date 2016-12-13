@@ -15,4 +15,7 @@
 @property(assign, nonatomic)float weight;
 @property(assign,nonatomic)float height;
 
+
+-(NSInteger) howOldAreYou;
+
 @end
