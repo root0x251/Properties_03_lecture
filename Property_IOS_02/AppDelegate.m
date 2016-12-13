@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "Human.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,19 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    Human *boxer = [[Human alloc]init];
+    
+    boxer.name = @"Alex";
+    boxer.age = 22;
+    boxer.weight = 78.4f;
+    boxer.height = 185.3f;
+    
+    NSLog(@"Имя-%@",[boxer name]);
+    NSLog(@"Возраст - %d",[boxer age]);
+    NSLog(@"Вес - %.2f",[boxer weight]);
+    NSLog(@"Рост - %.2f",[boxer height]);
+    
     return YES;
 }
 

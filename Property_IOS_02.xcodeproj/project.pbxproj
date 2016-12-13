@@ -15,6 +15,7 @@
 		F9F83B211E0082B000FB7E55 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9F83B1F1E0082B000FB7E55 /* LaunchScreen.storyboard */; };
 		F9F83B2C1E0082B000FB7E55 /* Property_IOS_02Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = F9F83B2B1E0082B000FB7E55 /* Property_IOS_02Tests.m */; };
 		F9F83B371E0082B000FB7E55 /* Property_IOS_02UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F9F83B361E0082B000FB7E55 /* Property_IOS_02UITests.m */; };
+		F9F83B461E00844200FB7E55 /* Human.m in Sources */ = {isa = PBXBuildFile; fileRef = F9F83B451E00844200FB7E55 /* Human.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		F9F83B321E0082B000FB7E55 /* Property_IOS_02UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Property_IOS_02UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9F83B361E0082B000FB7E55 /* Property_IOS_02UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Property_IOS_02UITests.m; sourceTree = "<group>"; };
 		F9F83B381E0082B000FB7E55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9F83B441E00844200FB7E55 /* Human.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Human.h; sourceTree = "<group>"; };
+		F9F83B451E00844200FB7E55 /* Human.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Human.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,8 @@
 		F9F83B101E0082B000FB7E55 /* Property_IOS_02 */ = {
 			isa = PBXGroup;
 			children = (
+				F9F83B441E00844200FB7E55 /* Human.h */,
+				F9F83B451E00844200FB7E55 /* Human.m */,
 				F9F83B141E0082B000FB7E55 /* AppDelegate.h */,
 				F9F83B151E0082B000FB7E55 /* AppDelegate.m */,
 				F9F83B171E0082B000FB7E55 /* ViewController.h */,
@@ -276,6 +281,7 @@
 				F9F83B191E0082B000FB7E55 /* ViewController.m in Sources */,
 				F9F83B161E0082B000FB7E55 /* AppDelegate.m in Sources */,
 				F9F83B131E0082B000FB7E55 /* main.m in Sources */,
+				F9F83B461E00844200FB7E55 /* Human.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
